@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arena Centar blagdanski shopping</title>
+    <meta name="title" content="Arena Centar blagdanski shopping" />
+    <meta
+      name="description"
+      content="Ispuni anketu i osvoji poklon karticu Arena Centra od 1000 kuna"
+    />
+    <link rel="stylesheet" href="css/main.css?v=4" />
+
+    <!-- Facebook -->
+    <meta
+      property="og:url"
+      content="https://native.story.hr/preview/arena-centar/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arena Centar blagdanski shopping" />
+    <meta
+      property="og:description"
+      content="Ispuni anketu i osvoji poklon karticu Arena Centra od 1000 kuna"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/arena-centar/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Quicksand:wght@400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-267402-38"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-267402-38");
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__blue-rectangle">.</div>
+      <div class="header__text-box has-text-centered">
+        <h2>kreativni natječaj</h2>
+        <hr />
+        <h1>osvoji stipendiju</h1>
+        <h3>za super studij u</h3>
+        <h3>vrijednosti od</h3>
+        <h4>110 tisuća kuna</h4>
+      </div>
+    </header>
+    <main>
+      <!-- Main text section -->
+      <section class="section has-text-centered">
+        <div class="section__photo1">
+          <img src="./assets/images/header_photo_studying.png" alt="Student" />
+        </div>
+
+        <div class="section__text">
+          <p class="section__text--big">
+            Čak 30% poslova koji danas postoje izumljeni su u proteklih pet
+            godina, a do 2030. godine 60% novih poslova zahtijevat će vještine
+            koje trenutno posjeduje samo oko 20% populacije.
+          </p>
+          <p class="section__text--medium">
+            Digitalna transformacija zahvatila je sve sfere društva, a kako
+            bismo bili konkurentni na tržištu rada i unaprijedili poslovanje,
+            više nije pitanje trebamo li znati poslovati u digitalnom okruženju,
+            već je pitanje kako nadograditi sebe i znati uzeti najbolji dio tog
+            digitalnog `kolača`. Stoga se uključite u naš kreativni natječaj,
+            ispunite anketu, napišite zašto ste baš vi idealan kandidat za
+            poslijediplomski, doktorski studij Poslovne ekonomije u digitalnom
+            okruženju, a jedan od vas dobit će priliku besplatno studirati i
+            nadograditi svoje znanje.
+          </p>
+          <p class="section__text--small">
+            Više o ovom doktorskom studiju saznajte
+            <a href=""><span> OVDJE</span></a> .
+          </p>
+          <p class="section__text--xsmall">
+            <span
+              >*Studij traje šest semestara, izvodi se u Zagrebu i Dubrovniku te
+              je moguće studirati u Zagrebu i Dubrovniku.</span
+            >
+            Iznos školarine po semestru iznosi 18.300,00 kuna, a za bivše
+            studente Sveučilišta u Dubrovniku i Sveučilišta u Zagrebu iznosi
+            <span> 15.000,00 kuna </span> po semestru. Stipendija pokriva
+            školarinu za svih 6 semestara studija.
+          </p>
+        </div>
+
+        <div class="section__photo2">
+          <img src="./assets/images/form_photo_studying.png" alt="Student" />
+        </div>
+
+        <form class="form">
+          <!-- Spol -->
+          <div class="form__question">
+            <p>Ti si?</p>
+            <div class="form__answers">
+              <p>A) Muško</p>
+              <p>B) Žensko</p>
+            </div>
+          </div>
+
+          <!-- Regija -->
+          <div class="form__question">
+            <p>Iz kojeg si dijela Hrvatske?</p>
+            <div class="form__answers">
+              <p>Središnja Hrvatska</p>
+              <p>Dalmacija</p>
+              <p>Istra i Kvarner</p>
+              <p>Slavonija i Baranja</p>
+              <p>Lika i Gorski kotar</p>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div>
+            <input
+              type="submit"
+              id="form__submit"
+              class="form__button"
+              value="Pošalji"
+            />
+          </div>
+          <!-- Submit message -->
+          <h6 class="is-hidden has-text-centered" id="response-msg" class="">
+            Vaša prijava je spremljena. Hvala na sudjelovanju!
+          </h6>
+
+          <!-- Messages and loading -->
+          <div class="is-flex is-justify-content-center">
+            <div id="loading-indicator" class="is-hidden lds-ripple">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!--  FOOTER -->
+    <footer class="footer has-text-centered"></footer>
+
+    <!-- Main script-->
+    <script type="text/javascript" src="lib/main.js?v=1"></script>
+  </body>
+</html>

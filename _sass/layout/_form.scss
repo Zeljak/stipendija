@@ -1,0 +1,35 @@
+@use "../utilities/" as *;
+@use "../base/" as *;
+
+.form {
+  &__question {
+    background-color: $color-grey;
+    width: 50vw;
+    margin: 50px auto;
+    display: block;
+    padding-bottom: 28px;
+  }
+
+  p {
+    font-family: $family-primary;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  &__answers {
+    background-color: $color-grey-light;
+
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+
+    p {
+      color: black;
+    }
+  }
+}
