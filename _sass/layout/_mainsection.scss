@@ -6,6 +6,10 @@
     max-width: 1200px;
     margin: 50px auto 0 auto;
     font-family: $family-secondary;
+
+    @include for-widescreen {
+      max-width: 1100px;
+    }
   }
 
   &__text--big {
@@ -14,6 +18,17 @@
     line-height: 1.63;
     color: black;
     margin-bottom: 25px;
+
+    @include for-tablet {
+      font-size: 25px;
+      line-height: 40px;
+      margin-top: -20px;
+    }
+    @include for-phone {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: -20px;
+    }
   }
 
   &__text--medium {
@@ -23,6 +38,15 @@
     text-align: left;
     color: black;
     margin-bottom: 25px;
+
+    @include for-tablet {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @include for-phone {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   &__text--small {
@@ -33,10 +57,30 @@
     color: $color-grey;
     margin-bottom: 25px;
 
+    @include for-tablet {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    @include for-phone {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
     span {
       font-size: 40px;
       color: $color-blue-light;
       text-decoration: underline;
+
+      @include for-tablet {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      @include for-phone {
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
   }
 
@@ -45,6 +89,16 @@
     text-align: left;
     color: $color-grey;
     margin-bottom: 50px;
+
+    @include for-tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include for-phone {
+      font-size: 18px;
+      line-height: 25px;
+    }
 
     span {
       font-weight: bold;

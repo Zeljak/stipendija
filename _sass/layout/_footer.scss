@@ -10,6 +10,13 @@
     height: 21px;
     background-color: $color-blue;
     margin-bottom: 90px;
+
+    @include for-phone {
+      width: 286px;
+      height: 1.3px;
+      margin-bottom: 30px;
+      margin-top: -50px;
+    }
   }
 
   h6 {
@@ -18,6 +25,15 @@
     text-align: center;
     color: $color-grey;
     margin-bottom: 60px;
+
+    @include for-tablet {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    @include for-phone {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
   }
 
   span {
@@ -27,6 +43,13 @@
     letter-spacing: 0.4px;
     text-align: center;
     color: $color-grey;
+
+    @include for-tablet {
+      font-size: 18px;
+    }
+    @include for-phone {
+      font-size: 16px;
+    }
   }
 
   &__logo {
@@ -38,6 +61,13 @@
 
     img {
       width: 10%;
+
+      @include for-tablet {
+        width: 20%;
+      }
+      @include for-phone {
+        width: 30%;
+      }
     }
   }
 }
