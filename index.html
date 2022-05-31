@@ -122,23 +122,247 @@
         <form class="form">
           <!-- Spol -->
           <div class="form__question">
-            <p>Ti si?</p>
+            <p>Vi ste?</p>
             <div class="form__answers">
-              <p>A) Muško</p>
-              <p>B) Žensko</p>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="zensko"><span>A)</span>&nbsp;&nbsp;Žensko</label>
+                </p>
+                <input type="radio" id="zensko" name="spol" value="zensko" />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="musko"><span>B)</span>&nbsp;&nbsp;Muško</label>
+                </p>
+                <input type="radio" id="musko" name="spol" value="musko" />
+              </div>
             </div>
           </div>
 
           <!-- Regija -->
           <div class="form__question">
-            <p>Iz kojeg si dijela Hrvatske?</p>
+            <p>Iz kojeg ste dijela Hrvatske?</p>
             <div class="form__answers">
-              <p>Središnja Hrvatska</p>
-              <p>Dalmacija</p>
-              <p>Istra i Kvarner</p>
-              <p>Slavonija i Baranja</p>
-              <p>Lika i Gorski kotar</p>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="sredisnja">Središnja Hrvatska</label>
+                </p>
+                <input
+                  type="radio"
+                  id="sredisnja"
+                  name="regija"
+                  value="sredisnja"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="dalmacija">Dalmacija</label>
+                </p>
+                <input
+                  type="radio"
+                  id="dalmacija"
+                  name="regija"
+                  value="dalmacija"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p><label for="istrakvarner">Istra i Kvarner</label></p>
+                <input
+                  type="radio"
+                  id="istrakvarner"
+                  name="regija"
+                  value="istrakvarner"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p><label for="slavonijabaranja">Slavonija i Baranja</label></p>
+                <input
+                  type="radio"
+                  id="slavonijabaranja"
+                  name="regija"
+                  value="slavonijabaranja"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p><label for="likagorskikotar">Lika i Gorski kotar</label></p>
+                <input
+                  type="radio"
+                  id="likagorskikotar"
+                  name="regija"
+                  value="likagorskikotar"
+                />
+              </div>
             </div>
+          </div>
+
+          <!-- Završen diplomski studij -->
+          <div class="form__question">
+            <p>Koji ste diplomski studij završili?</p>
+            <div class="form__answers">
+              <p>UPIŠITE:</p>
+              <input
+                type="text"
+                id="zavrsenstudij"
+                name="zavrsenstudij"
+                class="form__zavrsenstudij"
+              />
+            </div>
+          </div>
+
+          <!-- Godina završetka diplomskog studija -->
+          <div class="form__question">
+            <p>Prije koliko godina ste završili diplomski studij?</p>
+            <div class="form__answers">
+              <div class="form__radiobutton">
+                <p>
+                  <label for="tekzavrsen"
+                    ><span>A)</span>&nbsp;&nbsp;Tek sam sad završio/la</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="tekzavrsen"
+                  name="zavrsetakstudija"
+                  value="tekzavrsen"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="manjeod_pet_godina"
+                    ><span>B)</span>&nbsp;&nbsp;Prije manje od pet godina</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="manjeod_pet_godina"
+                  name="zavrsetakstudija"
+                  value="manjeod_pet_godina"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="viseod_pet_godina"
+                    ><span>C)</span>&nbsp;&nbsp;Prije više od pet godina</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="viseod_pet_godina"
+                  name="zavrsetakstudija"
+                  value="viseod_pet_godina"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Zašto želite studirati u digitalnom okruženju -->
+          <div class="form__question">
+            <p>
+              Zašto želite studirati poslovnu ekonomiju u digitalnom okruženju?
+            </p>
+            <div class="form__answers">
+              <div class="form__radiobutton">
+                <p>
+                  <label for="nedostatak_digitalnih_vjestina"
+                    ><span>A)</span>&nbsp;&nbsp;Nedostaje mi digitalnih znanja i
+                    vještina</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="nedostatak_digitalnih_vjestina"
+                  name="digitalno_okruzenje"
+                  value="nedostatak_digitalnih_vjestina"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="konkurentnost"
+                    ><span>B)</span>&nbsp;&nbsp;Dosta znam o digitalnom svijetu,
+                    ali želim biti još konkurentniji/a na tržištu rada</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="konkurentnost"
+                  name="digitalno_okruzenje"
+                  value="konkurentnost"
+                />
+              </div>
+              <div class="form__radiobutton">
+                <p>
+                  <label for="doktorska_titula"
+                    ><span>C)</span>&nbsp;&nbsp;Super se snalazim u digitalnom
+                    okruženju, ali želim steći doktorsku titulu</label
+                  >
+                </p>
+                <input
+                  type="radio"
+                  id="doktorska_titula"
+                  name="digitalno_okruzenje"
+                  value="doktorska_titula"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img
+              class="form__lastphoto"
+              src="./assets/images/form_end_photo_graduated.png"
+              alt="Student na promociji"
+            />
+          </div>
+
+          <div class="form__extraquestion has-text-centered">
+            <p>Zašto ste baš Vi idealan kandidat za stipendiju</p>
+            <p>
+              <span>Studija Poslovne ekonomije u digitalnom okruženju?</span>
+            </p>
+          </div>
+
+          <!-- Zašto ste vi idealan kandidat? -->
+          <div class="form__question2">
+            <p>Upišite svoj ODGOVOR:</p>
+
+            <textarea
+              name="zasto_idealan_kandidat"
+              id="zasto_idealan_kandidat"
+              rows="20"
+              cols="95"
+            ></textarea>
+          </div>
+
+          <!-- E-mail -->
+          <div class="form__question2">
+            <p>Upišite svoj e-mail</p>
+            <input type="email" id="email" name="email" class="form__email" />
+          </div>
+
+          <!-- GDPR checkbox -->
+          <label class="form__gdpr containerr" for="gdpr">
+            &nbsp;&nbsp; Prihvaćam
+            <a
+              href="http://www.adriamedia.hr/politika-privatnosti/"
+              target="_blank"
+              >pravila privatnosti AMZ-a</a
+            >
+            i
+            <a href="pravilaprijave.html" target="_blank">
+              pravila kreativnog natječaja</a
+            >, razumijem da će podaci u ovoj anketi biti podijeljeni sa
+            Sveučilištem u Dubrovniku i Ekonomskim fakultetom u Zagrebu.
+
+            <input type="checkbox" id="gdpr" name="gdpr" value="prihvacam" />
+            <span class="checkmark gdpr_checkmark"></span>
+          </label>
+
+          <h6 class="is-hidden" id="error-msg" class="">
+            Morate prihvatiti pravila privatnosti i pravila natječaja!
+          </h6>
+
+          <div class="containerr">
+            <p>Kreativni natječaj traje do 19. lipnja.</p>
           </div>
 
           <!-- Submit button -->
@@ -147,7 +371,7 @@
               type="submit"
               id="form__submit"
               class="form__button"
-              value="Pošalji"
+              value="POŠALJITE"
             />
           </div>
           <!-- Submit message -->
@@ -168,7 +392,25 @@
       </section>
     </main>
     <!--  FOOTER -->
-    <footer class="footer has-text-centered"></footer>
+    <footer class="footer has-text-centered">
+      <div class="footer__rectangle">.</div>
+      <h6>SADRŽAJ NASTAO U SURADNJI</h6>
+      <p><span>AMZ NATIVE STUDIO I</span></p>
+      <p>
+        <span> EKONOMSKI FAKULTET U ZAGREBU I SVEUČILIŠTE U DUBROVNIKU</span>
+      </p>
+      <div class="footer__logo">
+        <img src="./assets/images/logo_amz.png" alt="AMZ logo" />
+        <img
+          src="./assets/images/logo_ekonomski_fakultet.png"
+          alt="Logo Ekonomski fakultet u Zagrebu"
+        />
+        <img
+          src="./assets/images/logo_svuciliste_u_dubrovniku.png"
+          alt="Logo Sveučilište u Dubrovniku"
+        />
+      </div>
+    </footer>
 
     <!-- Main script-->
     <script type="text/javascript" src="lib/main.js?v=1"></script>
