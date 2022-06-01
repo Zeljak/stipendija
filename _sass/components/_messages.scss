@@ -1,3 +1,38 @@
-@use '../utilities/variables' as *;
-@use '../base/typography' as *;
+@use "../utilities/" as *;
+@use "../base/" as *;
 
+// ERROR MESSAGE
+#form__error-msg--spol,
+#form__error-msg--regija,
+#form__error-msg--zavrsenstudij,
+#form__error-msg--zavrsetakstudija,
+#form__error-msg--nedostatak_digitalnih_vjestina,
+#form__error-msg--kandidat,
+#error-msg--email,
+#error-msg--checkbox {
+  font-family: $family-third;
+  font-size: 20px;
+  line-height: 25px;
+  color: $color-error;
+  margin-bottom: 20px;
+  margin-top: -41px;
+
+  @include for-phone {
+    margin-top: 0;
+  }
+}
+
+#response-msg {
+  font-family: $family-third;
+  font-size: 25px;
+  line-height: 25px;
+  color: $color-blue;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+
+  @include for-phone {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}

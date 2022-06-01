@@ -146,6 +146,11 @@
             </div>
           </div>
 
+          <!-- Error message -->
+          <h6 class="form__error-msg is-hidden" id="form__error-msg--spol">
+            *Ovo polje je obavezno!
+          </h6>
+
           <!-- Regija -->
           <div class="form__question">
             <p>Iz kojeg ste dijela Hrvatske?</p>
@@ -218,6 +223,11 @@
             </div>
           </div>
 
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--regija">
+            *Ovo polje je obavezno!
+          </h6>
+
           <!-- Završen diplomski studij -->
           <div class="form__question">
             <p>Koji ste diplomski studij završili?</p>
@@ -231,6 +241,14 @@
               />
             </div>
           </div>
+
+          <!-- Error message -->
+          <h6
+            class="is-hidden form__error-msg"
+            id="form__error-msg--zavrsenstudij"
+          >
+            *Ovo polje je obavezno!
+          </h6>
 
           <!-- Godina završetka diplomskog studija -->
           <div class="form__question">
@@ -277,6 +295,14 @@
               </div>
             </div>
           </div>
+
+          <!-- Error message -->
+          <h6
+            class="is-hidden form__error-msg"
+            id="form__error-msg--zavrsetakstudija"
+          >
+            *Ovo polje je obavezno!
+          </h6>
 
           <!-- Zašto želite studirati u digitalnom okruženju -->
           <div class="form__question">
@@ -329,6 +355,14 @@
             </div>
           </div>
 
+          <!-- Error message -->
+          <h6
+            class="is-hidden form__error-msg"
+            id="form__error-msg--nedostatak_digitalnih_vjestina"
+          >
+            *Ovo polje je obavezno!
+          </h6>
+
           <div>
             <img
               class="form__lastphoto"
@@ -355,11 +389,21 @@
             ></textarea>
           </div>
 
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--kandidat">
+            *Ovo polje je obavezno!
+          </h6>
+
           <!-- E-mail -->
           <div class="form__question2">
             <p>Upišite svoj e-mail</p>
             <input type="email" id="email" name="email" class="form__email" />
           </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="error-msg--email">
+            *Ovo polje je obavezno!
+          </h6>
 
           <!-- GDPR checkbox -->
           <label class="form__gdpr containerr" for="gdpr">
@@ -379,8 +423,9 @@
             <span class="checkmark gdpr_checkmark"></span>
           </label>
 
-          <h6 class="is-hidden" id="error-msg" class="">
-            Morate prihvatiti pravila privatnosti i pravila natječaja!
+          <!-- Error message -->
+          <h6 class="is-hidden" id="error-msg--checkbox">
+            *Morate prihvatiti pravila privatnosti i pravila natječaja!
           </h6>
 
           <div class="containerr">
