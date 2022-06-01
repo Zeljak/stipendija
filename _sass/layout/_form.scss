@@ -328,7 +328,7 @@
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.gdpr_checkmark {
   position: absolute;
   top: 8px;
   left: 0;
@@ -339,30 +339,30 @@
 }
 
 /* On mouse-over */
-.containerr:hover input ~ .checkmark {
+.containerr:hover input ~ .gdpr_checkmark {
   background-color: white;
   border: solid $color-blue;
 }
 
 /* When the checkbox is checked */
-.containerr input:checked ~ .checkmark {
+.containerr input:checked ~ .gdpr_checkmark {
   background-color: white;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.gdpr_checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.containerr input:checked ~ .checkmark:after {
+.containerr input:checked ~ .gdpr_checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.containerr .checkmark:after {
+.containerr .gdpr_checkmark:after {
   left: 9px;
   top: 2px;
   width: 10px;

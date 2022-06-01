@@ -67,6 +67,9 @@
 
       gtag("config", "UA-267402-38");
     </script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/jquery.serialize-object.min.js"></script>
   </head>
 
   <body>
@@ -149,7 +152,7 @@
           <img src="./assets/images/form_photo_studying.png" alt="Student" />
         </div>
 
-        <form class="form">
+        <form id="EF_obrazac" class="form">
           <!-- Spol -->
           <div class="form__question">
             <p>Vi ste?</p>
@@ -157,11 +160,11 @@
               <div class="current_items">
                 <div class="current_items__row">
                   <div class="wrapper_input">
-                    <input type="radio" name="spol" id="zena" />
+                    <input type="radio" name="spol" id="zena" value="zena"/>
                     <label for="zena"><span>A)</span>&nbsp;&nbsp;Žena</label>
                   </div>
                   <div class="wrapper_input">
-                    <input type="radio" name="spol" id="muskarac" />
+                    <input type="radio" name="spol" id="muskarac" value="muskarac" />
                     <label for="muskarac"
                       ><span>B)</span>&nbsp;&nbsp;Muškarac</label
                     >
@@ -416,7 +419,7 @@
           <!-- E-mail -->
           <div class="form__question2">
             <p>Upišite svoj e-mail</p>
-            <input type="email" id="email" name="email" class="form__email" />
+            <input type="text" id="email" name="email" class="form__email" />
           </div>
 
           <!-- Error message -->
@@ -443,7 +446,12 @@
           </label>
 
           <!-- Error message -->
-          <h6 class="is-hidden" id="error-msg--checkbox">
+          <h6 class="is-hidden form__error-msg" id="error-msg--checkbox">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Error message -->
+          <h6 class="is-hidden" id="error-msg--submit">
             *Morate prihvatiti pravila privatnosti i pravila natječaja!
           </h6>
 

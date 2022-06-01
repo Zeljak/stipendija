@@ -9,7 +9,8 @@
 #form__error-msg--nedostatak_digitalnih_vjestina,
 #form__error-msg--kandidat,
 #error-msg--email,
-#error-msg--checkbox {
+#error-msg--checkbox, 
+#error-msg--submit {
   font-family: $family-third;
   font-size: 20px;
   line-height: 25px;
@@ -35,4 +36,8 @@
     font-size: 20px;
     margin-top: 30px;
   }
+}
+
+#error-msg--submit {
+  margin-top: 30px;
 }
