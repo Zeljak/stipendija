@@ -84,9 +84,32 @@
     <main>
       <!-- Main text section -->
       <section class="section has-text-centered">
-        <div class="section__photo1">
+        <!-- <div class="section__photo1">
           <img src="./assets/images/header_photo_studying.png" alt="Student" />
-        </div>
+        </div> -->
+
+        <picture class="section__photo1">
+          <source
+            srcset="./assets/images/stipendija_first_photo_976x908.png"
+            media="(min-width: 769px) AND (max-width: 1024px)"
+          />
+          <source
+            srcset="./assets/images/stipendija_first_photo_1464x1326.png"
+            media="(min-width: 1025px) AND (max-width: 1550px)"
+          />
+          <source
+            srcset="./assets/images/stipendija_first_photo_2152x1770.png"
+            media="(min-width: 1551px) AND (max-width: 1920px)"
+          />
+          <source
+            srcset="./assets/images/stipendija_first_photo_2152x1770.png"
+            media="(min-width: 1921px)"
+          />
+          <img
+            src="./assets/images/stipendija_first_photo_976x908.png"
+            alt="Student učenje, stipendija"
+          />
+        </picture>
 
         <div class="section__text">
           <p class="section__text--big">
