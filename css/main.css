@@ -607,6 +607,7 @@ input[type=radio] {
   padding-left: 35px;
   display: inline-block;
   position: relative;
+  text-align: left;
 }
 .current_items label:before {
   width: 20px;
@@ -614,15 +615,25 @@ input[type=radio] {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 42px;
   background: white;
   border: solid 1px #707070;
   margin-top: -10px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .current_items label:before {
+    top: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .current_items label:before {
+    top: 15px;
+  }
+}
 .current_items label:after {
   background: #241464;
   left: 0;
-  top: 50%;
+  top: 42px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(3.4);
@@ -634,6 +645,16 @@ input[type=radio] {
   content: "";
   position: absolute;
   left: 3px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .current_items label:after {
+    top: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .current_items label:after {
+    top: 15px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .current_items label {

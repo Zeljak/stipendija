@@ -438,21 +438,30 @@ input[type="radio"] {
     padding-left: 35px;
     display: inline-block;
     position: relative;
+    text-align: left;
     &:before {
       width: 20px;
       height: 20px;
       content: "";
       position: absolute;
       left: 0;
-      top: 50%;
+      top: 42px;
       background: white;
       border: solid 1px $color-grey;
       margin-top: -10px;
+
+      @include for-tablet {
+        top: 23px;
+      }
+
+      @include for-phone {
+        top: 15px;
+      }
     }
     &:after {
       background: $color-blue;
       left: 0;
-      top: 50%;
+      top: 42px;
       transition: 0.3s;
       transform: scale(3.4);
       opacity: 0;
@@ -462,6 +471,13 @@ input[type="radio"] {
       content: "";
       position: absolute;
       left: 3px;
+
+      @include for-tablet {
+        top: 23px;
+      }
+      @include for-phone {
+        top: 15px;
+      }
     }
 
     @include for-tablet {
