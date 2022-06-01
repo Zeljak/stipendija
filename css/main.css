@@ -158,9 +158,15 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form__question {
+    padding-bottom: 21px;
+  }
+}
 @media (max-width: 767px) {
   .form__question {
     margin: 30px auto;
+    padding-bottom: 8px;
   }
 }
 .form label {
@@ -534,6 +540,112 @@ body {
 
 input[type=radio] {
   cursor: pointer;
+}
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100vh;
+}
+
+.current_items {
+  width: 100%;
+  margin: auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.current_items__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.current_items .wrapper_input {
+  position: relative;
+  margin: 20px 0;
+}
+.current_items input {
+  display: none;
+}
+.current_items input:checked + label:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.current_items label {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 35px;
+  display: inline-block;
+  position: relative;
+}
+.current_items label:before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: white;
+  border: solid 1px #707070;
+  margin-top: -10px;
+}
+.current_items label:after {
+  background: #241464;
+  left: 0;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(3.4);
+          transform: scale(3.4);
+  opacity: 0;
+  margin-top: -7px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  left: 3px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .current_items label {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .current_items label {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
 }
 
 .header {

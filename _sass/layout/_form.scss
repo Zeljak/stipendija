@@ -16,8 +16,13 @@
       width: 100%;
     }
 
+    @include for-tablet {
+      padding-bottom: 21px;
+    }
+
     @include for-phone {
       margin: 30px auto;
+      padding-bottom: 8px;
     }
   }
 
@@ -383,4 +388,90 @@
 
 input[type="radio"] {
   cursor: pointer;
+}
+
+// proba
+.flex_container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+.current_items {
+  width: 100%;
+  margin: auto;
+  transition: 0.4s;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  // justify-content: center;
+  &__row {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .wrapper_input {
+    position: relative;
+    margin: 20px 0;
+  }
+  input {
+    display: none;
+    &:checked {
+      & + label {
+        &:after {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  label {
+    font-family: $family-secondary;
+    font-size: 30px;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+    margin: 0;
+    padding-left: 35px;
+    display: inline-block;
+    position: relative;
+    &:before {
+      width: 20px;
+      height: 20px;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background: white;
+      border: solid 1px $color-grey;
+      margin-top: -10px;
+    }
+    &:after {
+      background: $color-blue;
+      left: 0;
+      top: 50%;
+      transition: 0.3s;
+      transform: scale(3.4);
+      opacity: 0;
+      margin-top: -7px;
+      width: 14px;
+      height: 14px;
+      content: "";
+      position: absolute;
+      left: 3px;
+    }
+
+    @include for-tablet {
+      font-size: 25px;
+      line-height: 45px;
+    }
+
+    @include for-phone {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+  }
 }
