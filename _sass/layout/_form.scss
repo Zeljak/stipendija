@@ -144,13 +144,13 @@
   }
 
   &__extraquestion {
-    margin-bottom: 70px;
+    margin-bottom: -30px;
 
     @include for-tablet {
-      margin-bottom: 50px;
+      margin-bottom: -35px;
     }
     @include for-phone {
-      margin-bottom: 30px;
+      margin-bottom: -15px;
     }
     p {
       font-family: $family-primary;

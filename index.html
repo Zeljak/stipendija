@@ -148,9 +148,39 @@
           </p>
         </div>
 
-        <div class="section__photo2">
-          <img src="./assets/images/form_photo_studying.png" alt="Student" />
-        </div>
+        <!-- Second photo -->
+        <picture class="section__photo2">
+          <source
+            srcset="
+              ./assets/images/stipendija_second_photo_tablet_1464x1362.png
+            "
+            media="(min-width: 769px) AND (max-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./assets/images/stipendija_second_photo_desktop_1640x885.png
+            "
+            media="(min-width: 1025px) AND (max-width: 1550px)"
+          />
+          <source
+            srcset="
+              ./assets/images/stipendija_second_photo_desktop_1640x885.png
+            "
+            media="(min-width: 1551px) AND (max-width: 1920px)"
+          />
+          <source
+            srcset="
+              ./assets/images/stipendija_second_photo_desktop_big_2200x1187.png
+            "
+            media="(min-width: 1921px)"
+          />
+
+          <img
+            src="./assets/images/form_photo_studying.png"
+            class="section__photo2"
+            alt="Student"
+          />
+        </picture>
 
         <form id="EF_obrazac" class="form">
           <!-- Spol -->
@@ -160,11 +190,16 @@
               <div class="current_items">
                 <div class="current_items__row">
                   <div class="wrapper_input">
-                    <input type="radio" name="spol" id="zena" value="zena"/>
+                    <input type="radio" name="spol" id="zena" value="zena" />
                     <label for="zena"><span>A)</span>&nbsp;&nbsp;Žena</label>
                   </div>
                   <div class="wrapper_input">
-                    <input type="radio" name="spol" id="muskarac" value="muskarac" />
+                    <input
+                      type="radio"
+                      name="spol"
+                      id="muskarac"
+                      value="muskarac"
+                    />
                     <label for="muskarac"
                       ><span>B)</span>&nbsp;&nbsp;Muškarac</label
                     >
@@ -385,13 +420,46 @@
             *Ovo polje je obavezno!
           </h6>
 
-          <div>
+          <!-- Third photo -->
+          <picture class="section__photo3">
+            <source
+              srcset="
+                ./assets/images/stipendija_third_photo_tablet_1076x1285.png
+              "
+              media="(min-width: 769px) AND (max-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./assets/images/stipendija_third_photo_desktop_1464x1977.png
+              "
+              media="(min-width: 1025px) AND (max-width: 1550px)"
+            />
+            <source
+              srcset="
+                ./assets/images/stipendija_third_photo_desktop_1464x1977.png
+              "
+              media="(min-width: 1551px) AND (max-width: 1920px)"
+            />
+            <source
+              srcset="
+                ./assets/images/stipendija_third_photo_big_desktop_2400x2620.png
+              "
+              media="(min-width: 1921px)"
+            />
+
+            <img
+              src="./assets/images/form_end_photo_graduated.png"
+              class="section__photo3"
+              alt="Student na promociji"
+            />
+          </picture>
+          <!-- <div>
             <img
               class="form__lastphoto"
               src="./assets/images/form_end_photo_graduated.png"
               alt="Student na promociji"
             />
-          </div>
+          </div> -->
 
           <div class="form__extraquestion has-text-centered">
             <p>Zašto ste baš Vi idealan kandidat za stipendiju</p>

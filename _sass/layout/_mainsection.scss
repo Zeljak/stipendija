@@ -104,4 +104,10 @@
       font-weight: bold;
     }
   }
+
+  &__photo2 {
+    @include for-phone {
+      margin-top: -20px;
+    }
+  }
 }
