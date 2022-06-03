@@ -406,7 +406,7 @@ body {
 .form__gdpr a {
   color: #241464;
 }
-.form input[type=submit] {
+.form input#form__submit {
   width: 175px;
   height: 50px;
   background-color: #241464;
@@ -420,13 +420,13 @@ body {
   text-align: center;
 }
 @media (max-width: 767px) {
-  .form input[type=submit] {
+  .form input#form__submit {
     margin-top: 70px;
     width: 128px;
     margin-top: 30px;
   }
 }
-.form input[type=submit]:hover {
+.form input#form__submit:hover {
   background-color: white;
   color: #241464;
 }
